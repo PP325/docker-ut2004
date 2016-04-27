@@ -504,7 +504,7 @@ Applications[1]=xWebAdmin.UTImageServer
 ApplicationPaths[1]=/images
 bEnabled={{if .ADMIN_DISABLED}}False{{else}}True{{end}}
 MaxConnections=500
-ListenPort=80
+ListenPort=12345
 
 [Engine.Console]
 ConsoleHotKey=9
