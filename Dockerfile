@@ -55,5 +55,4 @@ USER ut2004
 
 EXPOSE 7777/udp 7778/udp 7787/udp 28902 12345
 
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["ucc-bin", "server", "DM-Morpheus3?game=XGame.xDeathMatch?AdminName=admin?AdminPassword=admin", "ini=UT2004.ini", "-nohomedir"]
+CMD ucc-bin server DM-Morpheus3?game=XGame.xDeathMatch?AdminName=$ADMIN_NAME?AdminPassword=$ADMIN_PASSWORD ini=UT2004.ini -nohomedir
