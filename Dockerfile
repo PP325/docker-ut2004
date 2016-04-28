@@ -51,8 +51,6 @@ ENV PATH=$PATH:/usr/src/ut2004/System
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
-USER ut2004
-
 EXPOSE 7777/udp 7778/udp 7787/udp 28902 12345
 
 CMD ucc-bin server DM-Morpheus3?game=XGame.xDeathMatch?AdminName=$ADMIN_NAME?AdminPassword=$ADMIN_PASSWORD ini=UT2004.ini -nohomedir
